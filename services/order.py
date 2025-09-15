@@ -3,8 +3,9 @@ from django.core.exceptions import ValidationError
 from django.db import transaction, IntegrityError
 from django.db.models import QuerySet
 
-from db.models import Order, Ticket
+from db.models import Order, Ticket, MovieSession
 import datetime
+
 
 
 def create_order(tickets: list[dict],
